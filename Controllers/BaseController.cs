@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CiphersWeb.Models;
+using CiphersWeb.Util;
 
 namespace CiphersWeb.Controllers
 {
