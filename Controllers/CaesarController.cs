@@ -9,14 +9,14 @@ using CiphersWeb.Models;
 
 namespace CiphersWeb.Controllers
 {
-    public class CaesarController : Controller
+    public class CaesarController : BaseController
     {
         public CaesarText GetCaesarText(CaesarText cText)
         {
             int shiftVal = cText.Key;
             foreach (char plnChar in cText.PlainText)
             {
-                cText.StrBuild.Append(CipherService.GetCipherLetter(plnChar, shiftVal));
+                cText.StrBuild.Append(GetCipherLetter(plnChar, shiftVal));
             }
 
             cText.CipherText = cText.StrBuild.ToString();

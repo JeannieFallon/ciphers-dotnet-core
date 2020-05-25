@@ -9,11 +9,11 @@ using CiphersWeb.Models;
 
 namespace CiphersWeb.Controllers
 {
-    public class VigenereController : Controller
+    public class VigenereController : BaseController
     {
         public VigenereText GetVigenereText(VigenereText vText)
         {
-            List<int> shiftVals = CipherService.GetShiftVals(vText.KeyWord);
+            List<int> shiftVals = GetShiftVals(vText.KeyWord);
             int i = 0;
 
             while (i < vText.PlainText.Length)
@@ -26,9 +26,9 @@ namespace CiphersWeb.Controllers
                     }
                     else
                     {
-                        vText.StrBuild.Append(CipherService.GetCipherLetter(
-                                                                vText.PlainText[i], 
-                                                                shiftVals[j]));
+                        vText.StrBuild.Append(GetCipherLetter(
+                                                vText.PlainText[i], 
+                                                shiftVals[j]));
                     }
 
                     i++;
