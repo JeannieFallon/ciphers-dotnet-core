@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Ciphers_Web.Models;
+using CiphersWeb.Models;
 
-namespace Ciphers_Web.Controllers
+namespace CiphersWeb.Controllers
 {
     public class HomeController : Controller
     {

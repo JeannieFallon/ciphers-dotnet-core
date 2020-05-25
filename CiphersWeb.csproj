@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Ciphers_Web</RootNamespace>
+    <RootNamespace>CiphersWeb</RootNamespace>
   </PropertyGroup>
 
 </Project>
