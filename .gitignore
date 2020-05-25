@@ -270,3 +270,6 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
+
+# fix for removing cached files and resetting
+# git rm -r . --cached
