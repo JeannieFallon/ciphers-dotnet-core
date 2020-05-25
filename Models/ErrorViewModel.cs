@@ -1,6 +1,6 @@
 using System;
 
-namespace Ciphers_Web.Models
+namespace CiphersWeb.Models
 {
     public class ErrorViewModel
     {
