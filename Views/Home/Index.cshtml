@@ -3,6 +3,16 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Ciphers Web App</h1>
+    <form method="POST">
+        <p>Select cipher(s):</p>
+        @for (var i=0; i<3; i++)
+        {
+            //TODO pass in list of available ciphers on viewmodel
+            <input name="IsSelectedCipher" type="checkbox" value="@i" /> @i <br />
+        }
+        <p>Enter plaintext:</p>
+        <input type="text" />
+        <input type="submit" />
+    </form>
 </div>

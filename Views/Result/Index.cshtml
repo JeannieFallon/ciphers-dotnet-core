@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Result";
+}
+
+<div class="text-center">
+    <h1 class="display-4"></h1>
+    <p>Original plaintext:</p>
+    <p>TODO</p>
+    <p>Ciphertext(s):</p>
+    @for (var i=0; i<3; i++)
+    {
+        //TODO pass in list of selected ciphers on viewmodel
+        <p value="@i" /> @i <br />
+    }
+</div>
